@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover{
+    color: green;
+}
+
+@media (min-width:700px) {
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px;
+        width: 76%;
+        align-self: center;
+        padding-left: 135px;
+    
+
+    }
+
+    .nav-header{
+        width: 40%;
+        min-width: 30%;
+    }
+
+    .ul-header{
+        display: flex;
+        list-style-type: none; 
+        justify-content: space-evenly;
+        
+    }
+
+    .links{
+        text-decoration: none;
+        color: hsl(236, 13%, 42%);
+    }
+
+    .links:hover{
+       color: hsl(5, 85%, 63%);
+       cursor: pointer;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    #main-grid{
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 0.25fr 0.25fr 0.25fr;
+        grid-template-rows: 0fr 0.73fr 0.5fr;
+        gap: 25px;
+        grid-template-areas:
+        "one one two"
+        "three four two"
+        "five six seven"
+    }
+
+    .one{
+        grid-area: one;
+    }
+
+    .oneImage{
+        width: 100%;
+        height: 275px;
+    }
+
+    .two{
+        grid-area: two;
+        background-color: hsl(240, 100%, 5%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two-Title{
+        color: hsl(35, 77%, 62%);
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-left: 5px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+
+    }
+    
+    .two-White{
+        color: hsl(36, 100%, 99%);
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    .two-Grey{
+        color: hsl(236, 13%, 42%);
+        margin-bottom: 30px;
+        font-size: 0.9rem;
+    }
+
+    .two-Border{
+        border-bottom: 1px solid grey;
+        width: 85%;
+    }
+
+    .two-Border:last-child{
+        border-bottom: none;
+    }
+    
+    .two-White:hover{
+        color: hsl(35, 77%, 62%);
+        text-decoration: none;
+    }
+
+    .three{
+        grid-area:three;
+    }
+
+    .three-Title{
+        color: hsl(240, 100%, 5%);
+        font-size: 3.4rem;
+        font-weight: 800;
+        width: 80%;
+        line-height: 3.2rem;
+
+    }
+
+    .four{
+        grid-area:four;
+    }
+
+    .fourText{
+         color: hsl(236, 13%, 42%);
+         font-size: 0.9rem;
+         line-height: 1.4rem;
+         font-weight: 400;
+         margin-top: 5px;
+         margin-left: 15px;
+         margin-right: 15px;
+         margin-bottom: 20px;
+
+    }
+
+    .readMore{
+        background-color: hsl(5, 85%, 63%);
+        color: hsl(240, 100%, 5%);
+        border:none;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        width: 55%;
+        height: 25%;
+        margin-left: 10px;
+    }
+
+    .readMore:hover{
+        background-color:hsl(240, 100%, 5%);
+        color: white;
+        font-weight: 500;
+    }
+
+    .five{
+        grid-area:five;
+        display: flex;
+    }
+
+    .six{
+        grid-area:six;
+        display: flex;
+    }
+
+    .seven{
+        grid-area:seven;
+        display: flex;
+    }
+
+    .imageBottom{
+        height: 100%;
+        width: 120px;
+    }
+
+    .textDesc{
+        margin-left: 20px;
+    }
+
+    .textNumber{
+        color: hsl(5, 85%, 63%);
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+
+    }
+
+    .textBold{
+        color: hsl(240, 100%, 5%);
+        font-weight: 800;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .textBold:hover{
+        color:hsl(5, 85%, 63%);
+    }
+
+    .greyText{
+        color: hsl(236, 13%, 42%);
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width:699px) {
+    
+}
+
