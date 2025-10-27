@@ -13,6 +13,8 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
     transition: margin-right .5s;
+    background-color: hsl(36, 100%, 99%);
+    background-size: cover;
 }
 
 
@@ -260,7 +262,7 @@ body{
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
-        backdrop-filter: none;
+        filter: none;
     }
     .side-menu a {
     padding: 8px 8px 8px 32px;
@@ -270,6 +272,8 @@ body{
     display: block;
     transition: 0.3s;
 }
+
+
 
 
 /* On hover, change the link color */
@@ -485,6 +489,12 @@ body{
         font-size: 0.9rem;
         line-height: 1.5rem;
     }
+
+    .content{
+        filter: none;
+        display: absolute;
+    }
+
 }
 
 
