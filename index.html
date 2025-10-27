@@ -16,9 +16,11 @@
 <body>
 
   <div class="header">
-    <img src="assets\images\logo.svg" alt="icon">
-    <nav class="nav-header">
+    <img src="assets\images\logo.svg" alt="icon" class="WIcon">
+    <span class="menu-icon" onclick="toggleMenu()"><img src="assets\images\icon-menu.svg" alt="" id="iconHide" class="iconHide"></span>
+    <nav class="nav-header side-menu" id="side-menu">
       <ul class="ul-header">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()"><img src="assets\images\icon-menu-close.svg" alt=""></a>
         <li><a href="" class="links">Home</a></li>
         <li><a href="" class="links">New</a></li>
         <li><a href="" class="links">Popular</a></li>
@@ -31,6 +33,7 @@
   <section id="main-grid">
     <div class="one">
       <img src="assets\images\image-web-3-desktop.jpg" alt="" class="oneImage">
+      <img src="assets\images\image-web-3-mobile.jpg" alt="" class="oneImage-Mobile">
     </div>
     <div class="two">
       <div class="two-Border">
