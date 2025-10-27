@@ -12,6 +12,7 @@ body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    transition: margin-right .5s;
 }
 
 
@@ -28,6 +29,14 @@ body{
 
 @media (min-width:700px) {
 
+    .menu-icon{
+        display: none;
+    }
+
+    .side-menu .close-btn{
+        display: none;
+    }
+
     .header{
         display: flex;
         flex-direction: row;
@@ -35,6 +44,7 @@ body{
         justify-content: space-between;
         margin: 50px;
         width: 76%;
+        max-width: 76%;
         align-self: center;
         padding-left: 135px;
     
@@ -87,6 +97,10 @@ body{
     .oneImage{
         width: 100%;
         height: 275px;
+    }
+
+    .oneImage-Mobile{
+        display: none;
     }
 
     .two{
@@ -234,6 +248,244 @@ body{
 }
 
 @media (max-width:699px) {
-    
+
+    .side-menu{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        backdrop-filter: none;
+    }
+    .side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
+
+
+/* On hover, change the link color */
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+/* Position the close button */
+.side-menu .close-btn {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    z-index: 2;
+}
+
+.iconHide{
+    display: block;
+}
+
+.WIcon{
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+    #main-grid{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 15px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+        gap: 25px;
+        grid-template-areas:
+        "one"
+        "three"
+        "four"
+        "two"
+        "five"
+        "six" 
+        "seven"
+    }
+    .one{
+        grid-area: one;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .oneImage{
+        display: none;
+    }
+
+    .oneImage-Mobile{
+        width: 100%;
+        height: auto;
+    }
+
+    .two{
+        grid-area: two;
+        background-color: hsl(240, 100%, 5%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two-Title{
+        color: hsl(35, 77%, 62%);
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-left: 5px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+
+    }
+
+    .two-White{
+        color: hsl(36, 100%, 99%);
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    .two-Grey{
+        color: hsl(236, 13%, 42%);
+        margin-bottom: 30px;
+        font-size: 0.9rem;
+    }
+
+    .two-Border{
+        border-bottom: 1px solid grey;
+        width: 85%;
+    }
+
+    .two-Border:last-child{
+        border-bottom: none;
+    }
+
+    .two-White:hover{
+        color: hsl(35, 77%, 62%);
+        text-decoration: none;
+    }
+
+    .three{
+        grid-area:three;
+    }
+
+    .three-Title{
+        color: hsl(240, 100%, 5%);
+        font-size: 3.4rem;
+        font-weight: 800;
+        width: 80%;
+        line-height: 3.2rem;
+
+    }
+
+    .four{
+        grid-area:four;
+    }
+
+    .fourText{
+            color: hsl(236, 13%, 42%);
+            font-size: 0.9rem;
+            line-height: 1.4rem;
+            font-weight: 400;
+            margin-top: 5px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+
+    }
+
+    .readMore{
+        background-color: hsl(5, 85%, 63%);
+        color: hsl(240, 100%, 5%);
+        border:none;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        width: 55%;
+        height: 25%;
+        margin-left: 10px;
+    }
+
+    .readMore:hover{
+        background-color:hsl(240, 100%, 5%);
+        color: white;
+        font-weight: 500;
+    }
+
+    .five{
+        grid-area:five;
+        display: flex;
+    }
+
+    .six{
+        grid-area:six;
+        display: flex;
+    }
+
+    .seven{
+        grid-area:seven;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .imageBottom{
+        height: 100%;
+        width: 120px;
+    }
+
+    .textDesc{
+        margin-left: 20px;
+    }
+
+    .textNumber{
+        color: hsl(5, 85%, 63%);
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+
+    }
+
+    .textBold{
+        color: hsl(240, 100%, 5%);
+        font-weight: 800;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .textBold:hover{
+        color:hsl(5, 85%, 63%);
+    }
+
+    .greyText{
+        color: hsl(236, 13%, 42%);
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+}
+
+
 
